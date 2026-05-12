@@ -1,6 +1,16 @@
 {
     "SVENSKA": [
         {
+            "title": "Sommaren 2026",
+            "undertitle": "Tryck här för att se närmre detaljer!",
+            "descriptions": [
+                "Ta ångtåget eller rälsbussen till Lundsbrunn i sommar! Vi utgår från stationen i Skara.",
+                "Tisdagar och torsdagar från 7/7 till 6/8 <br> Lördagar från 4/7 till 29/8 <br> Söndagar från 28/6 till 30/8"
+            ],
+            "pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/Sommartrafik/IMG_2689.JPG",
+            "eventURL": "https://sklj.se/se/resmedoss/sommartrafiken/"
+        },
+        {
             "title": "Hyra tåg",
             "undertitle": "Tryck här för att se närmre detaljer!",
             "descriptions": [
@@ -11,6 +21,16 @@
         }
     ],
     "ENGLISH": [
+        {
+            "title": "Summer 2026",
+            "undertitle": "Click here for more details!",
+            "descriptions": [
+                "Take the steam train or railcar to Lundsbrunn this summer! We depart from the station in Skara.",
+                "Tuesdays and Thursdays from 7/7 to 6/8 <br> Saturdays from 4/7 to 29/8 <br> Sundays from 28/6 to 30/8"
+            ],
+            "pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/Sommartrafik/IMG_2689.JPG",
+            "eventURL": "https://sklj.se/english/travel-with-us/summer/"
+        },
         {
             "title": "Rent a Train",
             "undertitle": "Click here for more details!",
