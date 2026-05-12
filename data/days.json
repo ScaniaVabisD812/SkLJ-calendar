@@ -1,0 +1,22 @@
+{
+	"Events": {
+		"annualMeeting26": {
+			"name": "Årsmöte",
+			"nameEN": "Annual meeting",
+			"description": "SkLJ:s årsmöte.",
+			"descriptionEN": "SkLJ's annual meeting.",
+			"link": "https://sklj.se/se/sidan-finns-inte-l-ngre",
+			"linkEN": "https://sklj.se/english/page-does-not-exist",
+			"textColor": "white",
+			"color": "#FF5349",
+			"lightColor": "RGB(252, 189, 189)"
+		}
+	},
+	"2026": {
+		"03": {
+			"28": {
+				"eventID": "annualMeeting26"
+			}
+		}
+	}
+}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kalender</title>
+	
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+		body{
+			font-family: 'Montserrat', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		table{
+			width: 100%;
+		}
+		th{
+			background-color: rgb(54, 58, 52);
+			color: white;
+			width: 14.28%;
+		}
+		th.calHead{
+			height: 3em;
+		}
+		th.calHead section{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		button{
+			background-color: rgb(72, 77, 70);
+			color: white;
+			border: none;
+			border-radius: 0%;
+			padding: 10px;
+			cursor: pointer;
+			font-size: 1.5em;
+		}
+		button:hover{
+			background-color: rgb(34, 38, 32);
+		}
+		th.calHead span.month{
+			font-size: 1.5em;
+			display: inline;
+		}
+		td{
+			width: 14.28%;
+			height: 4em;
+			border: 1px solid black;
+			text-align: center;
+			vertical-align: center;
+			background-color: rgb(230, 230, 230);
+		}
+		td.emptyDay{
+			background-color: rgb(201, 202, 200);
+			color: black;
+		}
+		td.eventDay{
+			cursor: pointer;
+			transition: all 0.2s;
+		}
+		td.eventDay:hover{
+			opacity: 0.6;
+		}
+
+		.eventList{
+			width: 100%;
+			margin: 0 auto;
+			display: block;
+			padding: 0.5em;
+			box-sizing: border-box;
+		}
+
+		.events{
+			display: flex;
+			flex-direction: column;
+		}
+
+		.event{
+			background-color: wheat;
+			border: 1px solid black;
+			padding: 0.5em;
+			margin: 0.5em 0;
+			text-decoration: none;
+			color: black;
+			position: relative;
+			transition: all 0.2s;
+		}
+
+		.event p{
+			margin-right: 2.6em;
+		}
+
+		.event:hover{
+			opacity: 0.6;
+		}
+		
+		.arrow{
+			position: absolute;
+			right: 0.5em;
+			top: calc(50% - 0.5em);
+			font-size: 2em;
+		}
+
+	</style>
+	<script>
+		/*
+		function hasEvents(month, year) {
+		    let monthStr = (month + 1).toString().padStart(2, '0'); // Convert month to one-indexed string with leading zero
+		    let daysInMonth = 32 - new Date(year, month, 32).getDate();
+		    for (let i = 1; i <= daysInMonth; i++) {
+		        let dateStr = i.toString().padStart(2, '0'); // Convert date to string with leading zero if necessary
+		        if (events[year] && events[year][monthStr] && events[year][monthStr][dateStr]) {
+		            let eventID = events[year][monthStr][dateStr].eventID;
+		            if (eventID) {
+		                return true;
+		            }
+		        }
+		    }
+		    return false;
+		}
+
+		function findNextMonthWithEvents(month, year) {
+		    let nextMonth = month;
+		    let nextYear = year;
+		    let searchedMonths = 0;
+		    let found = false;
+		    do {
+		        nextMonth++;
+		        if (nextMonth > 11) {
+		            nextMonth = 0;
+		            nextYear++;
+		        }
+		        if (hasEvents(nextMonth, nextYear)) {
+		            found = true;
+		            break;
+		        }
+		    } while (searchedMonths++ < 12);
+		    if (found) {
+		        return [nextMonth, nextYear];
+		    } else {
+		        return false;
+		    }
+		}
+		*/
+
+		function updateCalendar(month, year, events) {
+		    let firstDay = (new Date(year, month)).getDay();
+		    firstDay = (firstDay === 0) ? 6 : firstDay - 1; // Adjust to make Monday the first day
+		    let daysInMonth = 32 - new Date(year, month, 32).getDate();
+		    monthAndYearDisplay.innerHTML = months[month] + " " + year;
+		    let tbl = document.querySelector("tbody");
+		    tbl.innerHTML = "";
+		    let date = 1;
+		    let numEvents = 0;
+
+			let eventList = document.querySelector(".eventList");
+			eventList.innerHTML = "";
+
+		    for (let i = 0; i < 6; i++) {
+		        let row = document.createElement("tr");
+		        let isRowEmpty = true;
+		        for (let j = 0; j < 7; j++) {
+		            if (i === 0 && j < firstDay) {
+		                let cell = document.createElement("td");
+		                let cellText = document.createTextNode("");
+		                cell.appendChild(cellText);
+		                row.appendChild(cell);
+		            } else if (date > daysInMonth) {
+		                let cell = document.createElement("td");
+		                let cellText = document.createTextNode("");
+		                cell.appendChild(cellText);
+		                row.appendChild(cell);
+		            } else {
+		                let cell = document.createElement("td");
+		                let cellText = document.createTextNode(date);
+
+		                // Check if there are any events on this day
+		                let monthStr = (month + 1).toString().padStart(2, '0'); // Convert month to one-indexed string with leading zero
+		                let dateStr = date.toString().padStart(2, '0'); // Convert date to string with leading zero if necessary
+
+		                if (events[year] && events[year][monthStr] && events[year][monthStr][dateStr]) {
+		                    let dayEvents = events[year][monthStr][dateStr];
+							dayEvents = Object.values(dayEvents);
+
+							let buttonDate = date;
+
+							cell.addEventListener("click", function() {
+							    // Clear data-events-generated for all event days
+							    let eventDays = document.querySelectorAll(".eventDay");
+							    eventDays.forEach(function(eventDay) {
+							        delete eventDay.dataset.eventsGenerated;
+							    });
+
+							    // Clear the event list
+							    eventList.innerHTML = "";
+
+							    let h3 = document.createElement("h2");
+							    h3.appendChild(document.createTextNode(buttonDate + " " + months[month] + " " + year));
+								let p = document.createElement("p");
+								p.appendChild(document.createTextNode("Click on an event to view more information:"));
+							    eventList.appendChild(h3);
+								eventList.appendChild(p);
+							    let eventsDiv = document.createElement("section");
+							    eventsDiv.classList.add("events");
+							    for (let i = 0; i < dayEvents.length; i++) {
+							        let eventID = dayEvents[i];
+							        let event = events["Events"][eventID];
+							        let a = document.createElement("a");
+							        a.classList.add("event");
+							        a.href = event.linkEN;
+							        a.target = "_parent"; // Ensure the link opens in the parent window
+							        a.style.backgroundColor = event.lightColor;
+							        let h4 = document.createElement("h3");
+							        h4.appendChild(document.createTextNode(event.nameEN));
+							        a.appendChild(h4);
+							        let p = document.createElement("p");
+							        p.appendChild(document.createTextNode(event.descriptionEN));
+							        a.appendChild(p);
+							        let span = document.createElement("span");
+							        span.classList.add("arrow");
+							        span.appendChild(document.createTextNode("→"));
+							        a.appendChild(span);
+							        eventsDiv.appendChild(a);
+							    }
+							    eventList.appendChild(eventsDiv);
+
+							    // Scroll the event list into view with offset for fixed navigation bar
+							    let offset = 100; // Height of the fixed navigation bar
+							    let elementPosition = eventList.getBoundingClientRect().top;
+							    let offsetPosition = elementPosition - offset;
+
+							    window.parent.scrollTo({
+							        top: elementPosition,
+							        behavior: "smooth"
+							    });
+							});
+
+							cell.classList.add("eventDay");
+							numEvents += dayEvents.length;
+							let colors = dayEvents.map(function(eventID) {
+							    return events["Events"][eventID].color;
+							});
+
+							if (colors.length > 1) {
+							    cell.style.backgroundColor = "black";
+							    cell.style.color = "white";
+							} else {
+							    cell.style.backgroundColor = colors[0];
+							}
+
+		                } else {
+		                    cell.classList.add("emptyDay");
+		                    cellText = document.createTextNode(date);
+		                }
+
+		                cell.appendChild(cellText);
+		                row.appendChild(cell);
+		                date++;
+		                isRowEmpty = false;
+		            }
+		        }
+		        if (!isRowEmpty) {
+		            tbl.appendChild(row);
+		        }
+		    }
+
+			/*
+		    if (numEvents > 0) {
+		        console.log("Events: " + numEvents);
+		        nextEvent.style.display = "none";
+		    } else {
+		        let nextMonthWithEvents = findNextMonthWithEvents(month, year);
+		        if (nextMonthWithEvents) {
+		            nextEvent.removeEventListener("click", nextEventHandler); // Remove previous event listener
+		            nextEventHandler = function() {
+		                month = nextMonthWithEvents[0];
+		                year = nextMonthWithEvents[1];
+		                updateCalendar(month, year);
+		            };
+		            nextEvent.addEventListener("click", nextEventHandler);
+		            nextEvent.style.display = "inline";
+		        } else {
+		            nextEvent.style.display = "none";
+		        }
+		    }
+			*/
+		}
+
+		let month;
+		let year;
+		let nextEventHandler;
+
+		window.onload = function() {
+		    fetch("days.json")
+		        .then(response => response.json())
+		        .then(data => {
+		            events = data;
+		            console.log(events);
+
+		            date = new Date();
+		            month = date.getMonth();
+		            year = date.getFullYear();
+					months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		            monthAndYearDisplay = document.querySelector(".month");
+
+		            updateCalendar(month, year, events);
+
+					let prevMonth = document.getElementById("prevMonth");
+					let nextMonth = document.getElementById("nextMonth");
+
+					prevMonth.addEventListener("click", function() {
+						month--;
+						if (month < 0) {
+							month = 11;
+							year--;
+						}
+						updateCalendar(month, year, events);
+					});
+
+					nextMonth.addEventListener("click", function() {
+						month++;
+						if (month > 11) {
+							month = 0;
+							year++;
+						}
+						updateCalendar(month, year, events);
+					});
+		        })
+		        .catch(error => {
+		            console.error(error);
+		        });
+		}
+	</script>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th class="calHead" colspan="7">
+					<section>
+						<button id="prevMonth">
+							&larr;
+						</button>
+						<span class="month"></span>
+						<div>
+							<!-- <button id="nextEvent">
+								Nästa händelse
+								&rarr;
+							</button> -->
+							<button id="nextMonth">
+								&rarr;
+							</button>
+						</div>
+					</section>
+				</th>
+			</tr>
+			<tr>
+				<th>M</th>
+				<th>T</th>
+				<th>W</th>
+				<th>T</th>
+				<th>F</th>
+				<th>S</th>
+				<th>S</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	<section class="eventList">
+	</section>
+</body>
+</html>

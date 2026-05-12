@@ -1,0 +1,24 @@
+{
+    "SVENSKA": [
+        {
+            "title": "Hyra tåg",
+            "undertitle": "Tryck här för att se närmre detaljer!",
+            "descriptions": [
+                "Att hyra ett tåg hos oss är det perfekta alternativet för firmafesten, födelsedagsfesten eller bröllopet!"
+            ],
+            "pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/Boka%20t%C3%A5g/367291364_890339642295931_2602420491627086183_n.jpg",
+            "eventURL": "https://sklj.se/se/resmedoss/boka-t-g"
+        }
+    ],
+    "ENGLISH": [
+        {
+            "title": "Rent a Train",
+            "undertitle": "Click here for more details!",
+            "descriptions": [
+                "Renting a train from us is the perfect option for the company party, birthday party, or wedding!"
+            ],
+            "pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/Boka%20t%C3%A5g/367291364_890339642295931_2602420491627086183_n.jpg",
+            "eventURL": "https://sklj.se/english/travel-with-us/book-a-train"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+	"Events": {
+		"annualMeeting26": {
+			"name": "Årsmöte",
+			"nameEN": "Annual meeting",
+			"description": "SkLJ:s årsmöte. Klicka här för mer information.",
+			"descriptionEN": "SkLJ's annual meeting. Click here for more information.",
+			"link": "https://sklj.se/se/resmedoss/arsmote",
+			"linkEN": "https://sklj.se/english/travel-with-us/annual-meeting-2026",
+			"textColor": "white",
+			"color": "#FF5349",
+			"lightColor": "RGB(252, 189, 189)"
+		}
+	},
+	"2026": {
+		"03": {
+			"28": {
+				"eventID": "annualMeeting26"
+			}
+		}
+	}
+}

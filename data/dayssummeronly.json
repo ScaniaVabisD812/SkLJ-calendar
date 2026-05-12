@@ -1,0 +1,132 @@
+{
+	"Events": {
+		"sunday25": {
+			"name": "Söndagstrafik",
+			"nameEN": "Sunday traffic",
+			"description": "Museitrafik med ångtåg och rälsbuss. Klicka här för mer information.",
+			"descriptionEN": "Services with steam train and railcar. Click here for more information.",
+			"link": "https://sklj.se/se/resmedoss/sommartrafiken/s-ndagstrafik",
+			"linkEN": "https://sklj.se/english/travel-with-us/summer/weekdays",
+			"textColor": "white",
+			"color": "#C00000",
+			"lightColor": "RGB(255, 170, 170)"
+		},
+		"saturday25": {
+			"name": "Lördagstrafik",
+			"nameEN": "Saturday traffic",
+			"description": "Museitrafik med ångtåg. Klicka här för mer information.",
+			"descriptionEN": "Services with steam train. Click here for more information.",
+			"link": "https://sklj.se/se/resmedoss/sommartrafiken/l-rdagstrafik",
+			"linkEN": "https://sklj.se/english/travel-with-us/summer/saturdays",
+			"textColor": "black",
+			"color": "#FFCC00",
+			"lightColor": "RGB(255, 255, 170)"
+		},
+		"evening25": {
+			"name": "Vardagstrafik",
+			"nameEN": "Weekday traffic",
+			"description": "Museitrafik med ångtåg. Klicka här för mer information.",
+			"descriptionEN": "Services with steam train. Click here for more information.",
+			"link": "https://sklj.se/se/resmedoss/sommartrafiken/vardagstrafik",
+			"linkEN": "https://sklj.se/english/travel-with-us/summer/weekdays",
+			"textColor": "white",
+			"color": "#215E99",
+			"lightColor": "RGB(170, 204, 255)"
+		}
+	},
+	"2025": {
+		"06": {
+			"29": {
+				"eventID": "sunday25"
+			}
+		},
+		"07": {
+			"06": {
+				"eventID": "sunday25"
+			},
+			"13": {
+				"eventID": "sunday25"
+			},
+			"20": {
+				"eventID": "sunday25"
+			},
+			"27": {
+				"eventID": "sunday25"
+			},
+			"05": {
+				"eventID": "saturday25"
+			},
+			"12": {
+				"eventID": "saturday25"
+			},
+			"19": {
+				"eventID": "saturday25"
+			},
+			"26": {
+				"eventID": "saturday25"
+			},
+			"08": {
+				"eventID": "evening25"
+			},
+			"10": {
+				"eventID": "evening25"
+			},
+			"15": {
+				"eventID": "evening25"
+			},
+			"17": {
+				"eventID": "evening25"
+			},
+			"22": {
+				"eventID": "evening25"
+			},
+			"24": {
+				"eventID": "evening25"
+			},
+			"29": {
+				"eventID": "evening25"
+			},
+			"31": {
+				"eventID": "evening25"
+			}
+		},
+		"08": {
+			"03": {
+				"eventID": "sunday25"
+			},
+			"10": {
+				"eventID": "sunday25"
+			},
+			"17": {
+				"eventID": "sunday25"
+			},
+			"24": {
+				"eventID": "sunday25"
+			},
+			"31": {
+				"eventID": "sunday25"
+			},
+			"02": {
+				"eventID": "saturday25"
+			},
+			"09": {
+				"eventID": "saturday25"
+			},
+			"16": {
+				"eventID": "saturday25"
+			},
+			"23": {
+				"eventID": "saturday25"
+			},
+			"30": {
+				"eventID": "saturday25"
+			},
+			"05": {
+				"eventID": "evening25"
+			},
+			"07": {
+				"eventID": "evening25"
+			}
+		}
+	}
+}

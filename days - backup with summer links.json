@@ -1,0 +1,205 @@
+{
+	"Events": {
+		"sunday25": {
+			"name": "Söndagstrafik",
+			"nameEN": "Sunday traffic",
+			"description": "Museitrafik med ångtåg och rälsbuss. Klicka här för mer information.",
+			"descriptionEN": "Services with steam train and railcar. Click here for more information.",
+			"link": "https://sklj.se/se/resmedoss/sommartrafiken/s-ndagstrafik",
+			"linkEN": "https://sklj.se/english/travel-with-us/summer/sundays",
+			"textColor": "white",
+			"color": "#C00000",
+			"lightColor": "RGB(255, 170, 170)"
+		},
+		"saturday25": {
+			"name": "Lördagstrafik",
+			"nameEN": "Saturday traffic",
+			"description": "Museitrafik med ångtåg. Klicka här för mer information.",
+			"descriptionEN": "Services with steam train. Click here for more information.",
+			"link": "https://sklj.se/se/resmedoss/sommartrafiken/l-rdagstrafik",
+			"linkEN": "https://sklj.se/english/travel-with-us/summer/saturdays",
+			"textColor": "black",
+			"color": "#FFCC00",
+			"lightColor": "RGB(255, 255, 170)"
+		},
+		"evening25": {
+			"name": "Vardagstrafik",
+			"nameEN": "Weekday traffic",
+			"description": "Museitrafik med ångtåg. Klicka här för mer information.",
+			"descriptionEN": "Services with steam train. Click here for more information.",
+			"link": "https://sklj.se/se/resmedoss/sommartrafiken/vardagstrafik",
+			"linkEN": "https://sklj.se/english/travel-with-us/summer/weekdays",
+			"textColor": "white",
+			"color": "#215E99",
+			"lightColor": "RGB(170, 204, 255)"
+		},
+		"santa25": {
+			"name": "Tomtetåg",
+			"nameEN": "Santa train",
+			"description": "Ge dig ut på ett spännande tågäventyr mot julen! SkLJ tar dig till Lundsbrunn där ett möte med tomten väntar. Klicka här för mer information.",
+			"descriptionEN": "Embark on an exciting train adventure towards Christmas! SkLJ takes you to Lundsbrunn where a meeting with Santa awaits. Click here for more information.",
+			"link": "http://sklj.se/se/resmedoss/tomtetaget",
+			"linkEN": "https://sklj.se/english/travel-with-us/santa-train",
+			"textColor": "white",
+			"color": "#C00000",
+			"lightColor": "RGB(255, 170, 170)"
+		},
+		"annualMeeting25": {
+			"name": "Årsmöte",
+			"nameEN": "Annual meeting",
+			"description": "SkLJ:s årsmöte. Klicka här för mer information.",
+			"descriptionEN": "SkLJ's annual meeting. Click here for more information (only swedish available).",
+			"link": "https://sklj.se/se/sidan-finns-inte-l-ngre",
+			"linkEN": "https://sklj.se/english/page-does-not-exist",
+			"textColor": "white",
+			"color": "#FF5349",
+			"lightColor": "RGB(252, 189, 189)"
+		},
+		"tryOut25": {
+			"name": "Prova-på-dag",
+			"nameEN": "Try-out day",
+			"description": "Prova på hur det är att vara järnvägare på fritiden! Våra aktiva medlemmar visar hur det går till att köra tåg och underhålla fordon/bana. Klicka här för mer information.",
+			"descriptionEN": "Try out how it is to be a railway worker in your spare time! Our active members show how to drive trains and maintain vehicles/track. Click here for more information. (only swedish available)",
+			"link": "https://sklj.se/se/sidan-finns-inte-l-ngre",
+			"linkEN": "https://sklj.se/english/page-does-not-exist",
+			"textColor": "white",
+			"color": "#FF5349",
+			"lightColor": "RGB(252, 189, 189)"
+		},
+		"midsummer25": {
+			"name": "Midsommartåg",
+			"nameEN": "Midsummer train",
+			"description": "Åk tåg till midsommarfirandet i Lundsbrunn den 20:e juni",
+			"descriptionEN": "Go by train to Lundsbrunn for the midsummer celebrations 20:th of June",
+			"link": "https://sklj.se/se/sidan-finns-inte-l-ngre",
+			"linkEN": "https://sklj.se/english/page-does-not-exist",
+			"textColor": "white",
+			"color": "#296310",
+			"lightColor": "#A8E58B"
+		}
+	},
+	"2025": {
+		"03": {
+			"29": {
+				"eventID": "annualMeeting25"
+			}
+		},
+		"04": {
+			"26": {
+				"eventID": "tryOut25"
+			}
+		},
+		"06": {
+			"20": {
+				"eventID": "midsummer25"
+			},
+			"29": {
+				"eventID": "sunday25"
+			}
+		},
+		"07": {
+			"06": {
+				"eventID": "sunday25"
+			},
+			"13": {
+				"eventID": "sunday25"
+			},
+			"20": {
+				"eventID": "sunday25"
+			},
+			"27": {
+				"eventID": "sunday25"
+			},
+			"05": {
+				"eventID": "saturday25"
+			},
+			"12": {
+				"eventID": "saturday25"
+			},
+			"19": {
+				"eventID": "saturday25"
+			},
+			"26": {
+				"eventID": "saturday25"
+			},
+			"08": {
+				"eventID": "evening25"
+			},
+			"10": {
+				"eventID": "evening25"
+			},
+			"15": {
+				"eventID": "evening25"
+			},
+			"17": {
+				"eventID": "evening25"
+			},
+			"22": {
+				"eventID": "evening25"
+			},
+			"24": {
+				"eventID": "evening25"
+			},
+			"29": {
+				"eventID": "evening25"
+			},
+			"31": {
+				"eventID": "evening25"
+			}
+		},
+		"08": {
+			"03": {
+				"eventID": "sunday25"
+			},
+			"10": {
+				"eventID": "sunday25"
+			},
+			"17": {
+				"eventID": "sunday25"
+			},
+			"24": {
+				"eventID": "sunday25"
+			},
+			"31": {
+				"eventID": "sunday25"
+			},
+			"02": {
+				"eventID": "saturday25"
+			},
+			"09": {
+				"eventID": "saturday25"
+			},
+			"16": {
+				"eventID": "saturday25"
+			},
+			"23": {
+				"eventID": "saturday25"
+			},
+			"30": {
+				"eventID": "saturday25"
+			},
+			"05": {
+				"eventID": "evening25"
+			},
+			"07": {
+				"eventID": "evening25"
+			}
+		},
+		"11": {
+			"29": {
+				"eventID": "santa25"
+			},
+			"30": {
+				"eventID": "santa25"
+			}
+		},
+		"12": {
+			"06": {
+				"eventID": "santa25"
+			},
+			"07": {
+				"eventID": "santa25"
+			}
+		}
+	}
+}

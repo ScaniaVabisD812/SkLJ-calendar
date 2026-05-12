@@ -1,0 +1,120 @@
+{
+    "SVENSKA": [
+		{
+			"title": "Årsmöte 29/3 2025",
+			"undertitle": "Tryck här för att se närmre detaljer!",
+			"descriptions": [
+				"SkLJ:s årsmöte. Klicka här för mer information."
+			],
+			"pictureUrl": "https://sklj.se/bilder/IMG_3994a.jpg",
+			"eventURL": "https://sklj.se/se/resmedoss/arsmote"
+		},
+		{
+            "title": "Prova-på-dag 26/4 2025",
+            "undertitle": "Tryck här för att se närmre detaljer!",
+            "descriptions": [
+                "Prova på hur det är att vara järnvägare på fritiden! Våra aktiva medlemmar visar hur det går till att köra tåg och underhålla fordon/bana."
+            ],
+            "pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/Prova%20p%C3%A5-dag/Bild2.jpg",
+            "eventURL": "https://sklj.se/se/resmedoss/prova-pa-dag"
+        },
+        {
+            "title": "Sommaren 2025",
+            "undertitle": "Tryck här för att se närmre detaljer!",
+            "descriptions": [
+                "Ta ångtåget eller rälsbussen till Lundsbrunn i sommar! Vi utgår från stationen i Skara.",
+                "Tisdagar och torsdagar från 8/7 till 7/8 <br> Lördagar från 5/7 till 30/8 <br> Söndagar från 29/6 till 31/8"
+            ],
+            "pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/Sommartrafik/IMG_2689.JPG",
+            "eventURL": "https://sklj.se/se/resmedoss/sommartrafiken/"
+        },
+        {
+            "title": "Järnvägsmuseet",
+            "undertitle": "Tryck här för att se närmre detaljer!",
+            "descriptions": [
+                "Järnvägsmuséet i lokstallet på Vallgatan 41 i Skara håller öppet under dagen på lördagar och söndagar under sommartrafiken och innan trafikdagarna på tisdagar och torsdagar.",
+                "Spana in järnvägsfordon och järnvägsrelaterade föremål från smalspårsepoken i och utanför Skaraborg."
+            ],
+            "pictureUrl": "https://sklj.se/Ny%20hemsida/Museet/Museet.jpg",
+            "eventURL": "https://sklj.se/se/museet"
+        },
+        {
+            "title": "Tomtetåg 2025",
+            "undertitle": "Tryck här för att se närmre detaljer!",
+            "descriptions": [
+                "Ge dig ut på ett spännande tågäventyr mot julen! SkLJ tar dig till Lundsbrunn där ett möte med tomten väntar. Kliv av tåget och träffa tomten i det mysiga godsmagasinet - ett äventyr för hela familjen!",
+                "Lördag 29/11, Söndag 30/11 <br> Lördag 6/12, Söndag 7/12"
+            ],
+            "pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/Tomtet%C3%A5g/Tomtet%C3%A5g.jpg",
+            "eventURL": "https://sklj.se/se/resmedoss/tomtetaget"
+        },
+        {
+            "title": "Hyra tåg",
+            "undertitle": "Tryck här för att se närmre detaljer!",
+            "descriptions": [
+                "Att hyra ett tåg hos oss är det perfekta alternativet för firmafesten, födelsedagsfesten eller bröllopet!"
+            ],
+            "pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/Boka%20t%C3%A5g/367291364_890339642295931_2602420491627086183_n.jpg",
+            "eventURL": "https://sklj.se/se/resmedoss/boka-t-g"
+        },
+        {
+            "title": "Midsommartåg 2025",
+            "undertitle": "Tryck här för att se närmre detaljer!",
+            "descriptions": [
+                "Åk tåg till midsommarfirandet i Lundsbrunn den 20:e juni"
+            ],
+            "pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/LundsbrunnJubileum/Beskuren%203037.jpg",
+            "eventURL": "https://sklj.se/se/resmedoss/midsommartaget"
+        }
+    ],
+    "ENGLISH": [
+    {
+        "title": "Summer 2025",
+        "undertitle": "Click here for more details!",
+        "descriptions": [
+            "Take the steam train or railcar to Lundsbrunn this summer! We depart from the station in Skara.",
+            "Tuesdays and Thursdays from 8/7 to 7/8 <br> Saturdays from 5/7 to 30/8 <br> Sundays from 29/6 to 31/8"
+        ],
+        "pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/Sommartrafik/IMG_2689.JPG",
+        "eventURL": "https://sklj.se/english/travel-with-us/summer/"
+    },
+    {
+        "title": "Railway museum",
+        "undertitle": "Click here for more details!",
+        "descriptions": [
+            "The Railway Museum in the engine shed at Vallgatan 41 in Skara is open during the day on Saturdays and Sundays during the summer traffic season, as well as before traffic days on Tuesdays and Thursdays.",
+            "Check out railway vehicles and railway-related objects from the narrow-gauge era in and around Skaraborg."
+        ],
+        "pictureUrl": "https://sklj.se/Ny%20hemsida/Museet/Museet.jpg",
+        "eventURL": "https://sklj.se/english/museum"
+    },
+    {
+        "title": "Midsummer train 2025",
+        "undertitle": "Click here for more details!",
+        "descriptions": [
+            "Go by train to Lundsbrunn for the midsummer celebrations 20:th of June"
+        ],
+        "pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/LundsbrunnJubileum/Beskuren%203037.jpg",
+        "eventURL": "https://sklj.se/english/travel-with-us/midsummer-train"
+    },
+    {
+        "title": "Santa Train 2025",
+        "undertitle": "Click here for more details!",
+        "descriptions": [
+            "Embark on an exciting train adventure towards Christmas! SkLJ takes you to Lundsbrunn where a meeting with Santa awaits. Get off the train and meet Santa in the cozy goods warehouse - an adventure for the whole family!",
+            "Saturday 29/11, Sunday 30/11 <br> Saturday 6/12, Sunday 7/12"
+        ],
+        "pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/Tomtet%C3%A5g/Tomtet%C3%A5g.jpg",
+        "eventURL": "https://sklj.se/english/travel-with-us/santa-train"
+    },
+    {
+        "title": "Rent a Train",
+        "undertitle": "Click here for more details!",
+        "descriptions": [
+            "Renting a train from us is the perfect option for the company party, birthday party, or wedding!"
+        ],
+        "pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/Boka%20t%C3%A5g/367291364_890339642295931_2602420491627086183_n.jpg",
+        "eventURL": "https://sklj.se/english/travel-with-us/book-a-train"
+    }
+]
+}
