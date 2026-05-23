@@ -11,6 +11,28 @@
 			"color": "#FF5349",
 			"lightColor": "RGB(252, 189, 189)"
 		},
+		"vilansenior26": {
+			"name": "Rälsbuss till hälsomässan för seniorer",
+			"nameEN": "Railbus to senior health fair",
+			"description": "Gratis rälsbussresa till hälsomässan för seniorer i Vilanhallen. Klicka här för mer information.",
+			"descriptionEN": "Free railbus trip to the senior health fair in Vilanhallen. Click here for more information (only available in Swedish).",
+			"link": "https://sklj.se/se/resmedoss/seniorm-ssa-2026",
+			"linkEN": "https://sklj.se/se/resmedoss/seniorm-ssa-2026",
+			"textColor": "white",
+			"color": "#F57504",
+			"lightColor": "RGB(255, 204, 170)"
+		},
+		"midsummer26": {
+			"name": "Midsommartåg",
+			"nameEN": "Midsummer train",
+			"description": "Åk tåg till midsommarfirandet i Lundsbrunn den 19:e juni. Klicka här för mer information.",
+			"descriptionEN": "Go by train to Lundsbrunn for the midsummer celebrations 19:th of June. Click here for more information.",
+			"link": "https://sklj.se/se/resmedoss/midsommartaget",
+			"linkEN": "https://sklj.se/english/travel-with-us/midsummer-train",
+			"textColor": "white",
+			"color": "#296310",
+			"lightColor": "#A8E58B"
+		},
 		"sunday26": {
 			"name": "Söndagstrafik",
 			"nameEN": "Sunday traffic",
@@ -51,7 +73,15 @@
 				"eventID": "annualMeeting26"
 			}
 		},
+		"05": {
+			"22": {
+				"eventID": "vilansenior26"
+			}
+		},
 		"06": {
+			"19": {
+				"eventID": "midsummer26"
+			},
 			"28": {
 				"eventID": "sunday26"
 			}

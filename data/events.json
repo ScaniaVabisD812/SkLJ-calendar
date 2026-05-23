@@ -1,6 +1,24 @@
 {
     "SVENSKA": [
         {
+			"title": "Rälsbuss till hälsomässan för seniorer 22/5 2026",
+			"undertitle": "Tryck här för att se närmre detaljer!",
+			"descriptions": [
+				"Gratis rälsbussresa till hälsomässan för seniorer i Vilanhallen. Klicka här för mer information."
+			],
+			"pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/Vilan/PXL_20260519_171157133.jpg",
+			"eventURL": "https://sklj.se/se/resmedoss/seniorm-ssa-2026"
+		},
+        {
+            "title": "Midsommartåg 2026",
+            "undertitle": "Tryck här för att se närmre detaljer!",
+            "descriptions": [
+                "Åk tåg till midsommarfirandet i Lundsbrunn den 19:e juni"
+            ],
+            "pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/LundsbrunnJubileum/Beskuren%203037.jpg",
+            "eventURL": "https://sklj.se/se/resmedoss/midsommartaget"
+        },
+        {
             "title": "Sommaren 2026",
             "undertitle": "Tryck här för att se närmre detaljer!",
             "descriptions": [
@@ -21,6 +39,24 @@
         }
     ],
     "ENGLISH": [
+        {
+			"title": "Railbus to senior health fair 22/5 2026",
+			"undertitle": "Click here for more details!",
+			"descriptions": [
+				"Free railbus trip to the senior health fair in Vilanhallen. Click here for more information (only available in Swedish)."
+			],
+			"pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/Vilan/PXL_20260519_171157133.jpg",
+			"eventURL": "https://sklj.se/se/resmedoss/seniorm-ssa-2026"
+		},
+        {
+            "title": "Midsummer train 2026",
+            "undertitle": "Click here for more details!",
+            "descriptions": [
+                "Go by train to Lundsbrunn for the midsummer celebrations 19:th of June"
+            ],
+            "pictureUrl": "https://sklj.se/Ny%20hemsida/Res%20med%20oss/LundsbrunnJubileum/Beskuren%203037.jpg",
+            "eventURL": "https://sklj.se/english/travel-with-us/midsummer-train"
+        },
         {
             "title": "Summer 2026",
             "undertitle": "Click here for more details!",
